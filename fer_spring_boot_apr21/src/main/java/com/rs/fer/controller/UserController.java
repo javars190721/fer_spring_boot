@@ -72,7 +72,7 @@ public class UserController {
 
 	}
 
-	
+	// get user
 
 		@GetMapping("/user/{id}")
 		public GetUserResponse getUser(@PathVariable("id") Integer id) {
