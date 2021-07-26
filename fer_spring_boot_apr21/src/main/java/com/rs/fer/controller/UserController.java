@@ -61,7 +61,7 @@ public class UserController {
 		Set<String> errorMessages = userValidation.validateUpdateUserRequest(request);
 
 		if (!CollectionUtils.isEmpty(errorMessages)) {
-			// return response with error messages
+			// return response with error messages test
 			response = new UpdateUserResponse(HttpStatus.PRECONDITION_FAILED, "999", null, errorMessages);
 
 		} else {
