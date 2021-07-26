@@ -54,7 +54,7 @@ public class UserController {
 		}
 		return response;
 	}
-	
+	/*
 	@PostMapping("/login")
 	public LoginResponse login(@RequestBody LoginRequest request) {
 
@@ -70,7 +70,7 @@ public class UserController {
 		}
 		return response;
 	}
-
+	*/
 	// get User
 
 	@GetMapping("/user/{id}")
