@@ -1,5 +1,8 @@
 package com.rs.fer.expense.service;
 
+import java.util.List;
+
+import com.rs.fer.bean.Expense;
 import com.rs.fer.expense.request.AddExpenseRequest;
 import com.rs.fer.expense.request.DeleteExpenseRequest;
 import com.rs.fer.expense.request.EditExpenseRequest;
@@ -22,5 +25,7 @@ public interface ExpenseService {
 	GetExpenseResponse getExpense(GetExpenseRequest request);
 
 	GetExpensesResponse getExpenses(GetExpensesRequest request);
+
+	List<Expense> expenseReport(int userId, String type, String fromDate, String toDate);
 
 }

@@ -1,5 +1,6 @@
 package com.rs.fer.expense.service.impl;
 
+import java.util.List;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -186,5 +187,11 @@ public class ExpenseServiceImpl implements ExpenseService {
 		}
 
 		return response;
+	}
+
+	@Override
+	public List<Expense> expenseReport(int userId, String type, String fromDate, String toDate) {
+		// TODO Auto-generated method stub
+		return null;
 	}
 }
