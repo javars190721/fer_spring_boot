@@ -27,7 +27,8 @@ public class ExpenseController {
 
 	@Autowired
 	ExpenseService expenseService;
-	
+	 
+	/* edit expense */
 	@PostMapping("/editExpense")
 	public EditExpenseResponse editExpense(@RequestBody EditExpenseRequest request) {
 
@@ -71,8 +72,5 @@ public class ExpenseController {
 		return response;
 
 	}
-	
-	
 
-	
 }
